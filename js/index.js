@@ -28,6 +28,20 @@ alert(ageVerification);
 let isAdult = ageVerification;
 console.log(isAdult);
 
+//Task 6
+let myName = "Adrian";
+let myLastName = true;
+let myClass = "602 JS Core";
+let myBirth = 2003;
+console.log(typeof myName);
+console.log(typeof myLastName);
+console.log(typeof myClass);
+console.log(typeof myBirth);
+let u;
+console.log(typeof u);
+let v = "u" * 2;
+console.log(typeof v);
+
 // Task 7
 let question1 = prompt("What`s your login?", "Your login");
 let question2 = prompt("What`s your email?", "Your email");
