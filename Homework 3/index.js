@@ -54,4 +54,63 @@ let b = prompt('Введіть степінь ');  b = Number(b);
 multiplication(a, b);
 //raiseToDegree(3, 4); 81
 
-//Task 5 
+//Task 5
+
+function findMin() {
+let min = arguments[0];
+for (let index = 0; index < arguments.length; index++) {
+    if (min > arguments[index]) {
+        min = arguments[index];
+    }
+}
+return min;
+}
+console.log(findMin(12, 14, 4, -4, 0.2));
+
+//Task  6
+
+function findUnique(arr)
+{   
+    var n = arr.length;
+    for (var i = 0; i < n-1; i++){
+      for (var j = i+1; j < n; j++){
+        if (arr[ i ] === arr[j]){
+          return false;
+        }
+        }
+     }
+    return true;
+}
+//findUnique([1, 2, 3, 5, 3]);  // false
+//findUnique([1, 2, 3, 5, 11]); // true 
+
+//Task 7
+
+function lastElem(arr, count){
+    if (count == null){
+        console.log(arr.pop());
+    }else{
+        console.log(arr.slice(-count));
+    }
+}
+console.log(lastElem([3, 4, 10, -5]));
+console.log(lastElem([3, 4, 10, -5], 2));
+
+//Task 8
+
+let str = "i love java script";
+
+function changeReg(string) {
+  const strArray = string.split(" ");
+  const arr = [];
+  for (let index = 0; index < strArray.length; index++) {
+    arr[index] = strArray[index].charAt(0).toUpperCase() + strArray[index].slice(1);
+  }
+  let resStr = "";
+  for (let index = 0; index < arr.length; index++) {
+    resStr += arr[index] + " ";
+  }
+  return resStr;
+}
+
+console.log(changeReg(str));
