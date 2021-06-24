@@ -56,7 +56,7 @@ class Person {
         showCourse() {
             let date = new Date();
             let currentDate = date.getFullYear();
-            return currentDate - this.date;
+            return currentDate - this.year;
         }
     }
     let student = new Student("Adrian", "Petrovskyi", 2020);
