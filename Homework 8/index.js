@@ -86,7 +86,7 @@ function checkEmail(email) {
   let size;
   let array = email.match(regExp3);
   if (array == null) {
-    size = 0;
+    
   } else size = array.length;
 
   if (size > 1) {
