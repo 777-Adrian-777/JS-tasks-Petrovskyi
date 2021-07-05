@@ -175,7 +175,20 @@
 
 //Task 7
 
-var countriesSelect = document.querySelector('#countries-select');
+<select id="countries-select"></select>
+<select id="cities-select"></select>
+
+ <script>
+  /*<select name="country" id="country">
+	<option>Germany</option>
+	<option>USA</option>
+	<option>Ukraine</option>
+</select>
+                    
+<select name="cities" id="cities"></select>
+<p></p>*/
+
+  var countriesSelect = document.querySelector('#countries-select');
   var citiesSelect = document.querySelector('#cities-select');
   var data = {
         Germany: ['Berlin', 'Keln', 'Munich'],  
@@ -203,6 +216,7 @@ function addOptions(select, arr) {
 }
 
 </script>
+
 
 
 
